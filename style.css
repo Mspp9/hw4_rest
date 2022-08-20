@@ -20,6 +20,7 @@ body
   padding-top: 50px; /*внутренний отступ*/
   display: flex; /*все элементы располагаются в линию друг за другом*/
   align-items: center; /*выравниваем элементы по линии*/
+  justify-content: space-around; /*наши элементы располагаются на небольшом расстоянии друг от друга*/
 }
 .nav-item /*работаем с сылками меню*/
 {
@@ -29,6 +30,12 @@ body
   font-size: 14px;
 
   margin-right: 25px; /*расстояние между элементами*/
+
+  transition: color 0.3s linear; /*делает плавность изменения цвета элемента при наведении на нее*/
+}
+.nav-item:hover /*все, что будет указано в этих фигурных скобках будет происходить в том момент, когда будем наводить мышку на элементы*/
+{
+color: #FF7400;
 }
 .cart /*делаем границу справа*/
 {
@@ -50,6 +57,11 @@ text-decoration: none;
 font-weight: 700;
 font-size: 18px;
 }
+.num:hover
+{
+  transition: color 0.3s linear;
+  color: #FF7400;
+}
 .phone-text /*текст под номером телефона*/
 {
   font-size: 14px;
@@ -60,6 +72,19 @@ font-size: 18px;
 {
   display: flex;
   align-items:center;
+}
+.button /*заказ столика кнопка. добавлен в класс btn*/
+{
+  background-color:#FF7400;
+  color: aliceblue; 
+  text-decoration: none;
+  padding: 14px 19px;
+  font-weight: 700;
+  transition: background-color: 0.2s linear;
+}
+.button:hover
+{
+    background-color: #9d4d0b
 }
 
 
