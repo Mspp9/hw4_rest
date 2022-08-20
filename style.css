@@ -1,6 +1,8 @@
 body
 {
   margin: 0;/*убираем белые полосы слева и справа*/
+  font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif; /*шрифт из ГУГЛ*/
 }
 .container
 {
@@ -12,4 +14,15 @@ body
   height: 100vh; /*высота картинки,vh - значит, что наш блок будет растягиваться на всю высоту экрана*/
   background-repeat: no-repeat;/*позволяет не повторять изображения*/
   background-size: cover;/*означает, что картинка будет растягиваться на весь экран*/
+}
+.header-line /*двигает лого вниз, и все наше меню подвинулось*/
+{
+  padding-top: 50px; /*внутренний отступ*/
+  display: flex; /*все элементы располагаются в линию друг за другом*/
+  align-items: center; /*выравниваем элементы по линии*/
+}
+.nav-item /*работаем с сылками меню*/
+{
+  color: aliceblue;
+  text-decoration: none; /*убираем подчеркивание*/
 }
