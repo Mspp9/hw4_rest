@@ -153,6 +153,7 @@ transition: background-color 0.3s linear ;
 .card 
 {
   background-color: rgb(181, 176, 176);
+  width: 33%;
 }
 .card-image
 {
@@ -168,5 +169,10 @@ transition: background-color 0.3s linear ;
 .card-desc
 {
   display: flex;
+  justify-content: center;
+}
+.cards-holder
+{
+  display: flex; /*карточки располагаются в строку, а не друг за другом*/
   justify-content: center;
 }
