@@ -150,3 +150,23 @@ transition: background-color 0.3s linear ;
 {
   background-color: #9e571e;
 }
+.card 
+{
+  background-color: rgb(181, 176, 176);
+}
+.card-image
+{
+
+  display: flex;
+  justify-content: center;
+}
+.card-title
+{
+  display: flex;
+  justify-content: center;
+}
+.card-desc
+{
+  display: flex;
+  justify-content: center;
+}
