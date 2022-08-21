@@ -107,17 +107,30 @@ font-size: 18px;
 }
 .header-suptitle
 {
-  font-weight: 400;
   font-size: 18px;
   color: aliceblue;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair Display', serif;
 }
-.header-suptitle:after /*делаем черточки слева и справа от ДОМ ЛУЧШЕЙ ЕДЫ*/
+/*делаем черточки слева и справа от ДОМ ЛУЧШЕЙ ЕДЫ*/
+.header-suptitle:after 
 {
 position: absolute;
 content:''; /*оставляем пустым, чтобы сделать линии*/
 height: 2px; /*высота линий*/
 width: 61px;
-background-color: #aliceblue;
+background-color:#fff;
+top: 127px;
+left: 60px;
+}
+.header-suptitle:before { /*делаем полоску справа*/
+  position: absolute;
+  content: '';
+  /*оставляем пустым, чтобы сделать линии*/
+  height: 2px;
+  /*высота линий*/
+  width: 61px;
+  background-color: #fff;
+  top: 127px;
+  left: 307px;
 }
