@@ -84,7 +84,40 @@ font-size: 18px;
 }
 .button:hover
 {
-    background-color: #9d4d0b
+    background-color: #D67E35
 }
+.header-down
+{
+  position: relative;/*становится родителем для header-title*/
+}
+.header-title
+{
+  color: #D67E35;
+  font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Tinos', serif;
+    font-size: 50px;
+    font-weight: 400;
+    
+    text-align: center;/*выравнивает текст по середине*/
+    position: absolute; /*свободное расположение*/
+    left: 0;
 
-
+    margin-top: 222px; /*отступ сверху : данные берутся из Фигма*/
+}
+.header-suptitle
+{
+  font-weight: 400;
+  font-size: 18px;
+  color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+.header-suptitle:after /*делаем черточки слева и справа от ДОМ ЛУЧШЕЙ ЕДЫ*/
+{
+position: absolute;
+content:''; /*оставляем пустым, чтобы сделать линии*/
+height: 2px; /*высота линий*/
+width: 61px;
+background-color: #aliceblue;
+}
